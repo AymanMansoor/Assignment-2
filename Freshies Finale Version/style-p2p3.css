@@ -1,0 +1,241 @@
+
+/*------------- Aisles ---------------*/
+
+.aisles {
+    background: url('images/background-1.jpg') no-repeat center center fixed;
+    -webkit-background-size: 100%;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+h3{
+    font-family: Patua One;
+    font-size: 40pt;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.deal{
+    background: rgb(241, 27, 27);
+    text-align: center;
+    padding: 40px;
+}
+.img-aisle-1{
+    background: url('images/Dairy.jpg') no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 130px;
+    height: 300px;
+    width: 600px;
+}
+.img-aisle-2{
+    background: url('images/FruitsVeg.jpg') no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 130px;
+    height: 300px;
+    width: 600px;
+}
+.img-aisle-3{
+    background: url('images/Snacks.jpg') no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 130px;
+    height: 300px;
+    width: 300px;
+}
+.img-aisle-4{
+    background: url('images/Meat.jpg') no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 130px;
+    height: 300px;
+    width: 300px;
+}
+.img-aisle-5{
+    background: url('images/Bread.jpg') no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 130px;
+    height: 300px;
+    width: 300px;
+}
+.img-aisle-6{
+    background: url('images/Bev.jpg') no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 130px;
+    height: 300px;
+    width: 300px;
+    margin-bottom: 200px;
+}
+.aisle-style{
+    text-decoration: none !important;
+    font-family: Eczar;
+    font-size: 22pt;
+    color: white;
+}
+.aisle-style:visited{
+    color: white;
+}
+.aisle-style:link{
+    color: white;
+}
+
+
+/*------------- Specific Aisle ---------------*/
+
+.container{
+    width: 100%;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+.container row{
+    margin-top: 30px;
+}
+.container img{
+    width: 100%;
+}
+.container h3{
+    background: white;
+    font-size: 40px;
+    padding: 10px;
+}
+.product-bottom h4
+{
+    font-size: 18px;
+    font-family: Patua One;
+    color: black;
+    background: white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.product-bottom h5
+{
+    font-size: 15px;
+    font-family: Patua One;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: black;
+    background: white;
+    margin-bottom: 300px;
+}
+.overlay{
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    margin-left: 0;
+    width: 70px;
+}
+.product-top:hover .overlay{
+    opacity: 1;
+    margin-left: 5%;
+    transition: 0.5s;
+}
+.overlay .fa{
+    cursor: pointer;
+    background-color: black ;
+    color: white;
+    height: 30px;
+    width: 30px;
+    font-size: 18px;
+    padding: 7px;
+    margin: 5%;
+    margin-bottom: 5%;
+}
+.overlay .btn-secondary{
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+.container .weeklyDeals{
+    background-color: rgb(241, 27, 27);
+    color: white;
+}
+
+/*------------- Products ---------------*/
+
+.container1{
+    margin-top: 100px;
+}
+.container1 img{
+    margin-bottom: 20px;
+}
+.prod-brand{
+    color: black;
+    background: white;
+    font-family: Patua One;
+    margin: 0px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.prod{
+    color: black;
+    background: white;
+    font-family: Patua One;
+    margin: 0px;
+    padding-top: 0px;
+    padding-left: 10px;
+}
+.prod-price{
+    font-family: Patua One;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    background: white;
+    position:static;
+    margin-top: 0;
+}
+label{
+    font-weight: bold;
+    background: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 3px;
+}
+input{
+    border: 1px solid #ccc;
+    font-weight: bold;
+    height: 33px;
+    text-align: center;
+    width: 30px;
+}
+.cart{
+    background: black;
+    color: white;
+    margin-top: 20px;
+    
+}
+.card, .card-header{
+    background: white;
+    border: none;
+    padding: 0;
+    margin-bottom: 20px ;
+    margin-top: 20px;
+    text-decoration: none;
+}
+.btn-link{
+    width: 100%;
+    height: 60px;
+    color: black !important;
+    font-weight: bold !important;
+    text-align: left !important;
+    text-decoration: none !important;
+}
+.card-body{
+    background: white;
+    margin-bottom: 100px;
+}
+.btn-link::after{
+    content: '\2212';
+    width: 35px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 5px;
+    right: 15px;
+    top: 11px;
+    position: absolute;
+}
