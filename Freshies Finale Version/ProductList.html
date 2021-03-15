@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&display=swap" rel="stylesheet"
-    type="text/css">
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&display=swap" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -15,30 +14,13 @@
     <title>Freshies</title>
     <link rel="stylesheet" href="style-p2p3.css">
     <link rel="stylesheet" href="style-p1p4.css">
-    <style>
-        body {
-            background-color: rgb(250, 250, 250);
-        }
-
-        .table {
-            width: auto;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        h4 {
-            text-align: center;
-            font-size: 28px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="p9p10.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="Index.html">Freshies</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -50,8 +32,7 @@
                     <a class="nav-link" href="ProductList.html">All Products</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="Aisles.html" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Aisles</a>
+                    <a class="nav-link dropdown-toggle" href="Aisles.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Aisles</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="Aisles.html">All Aisles</a>
                         <a class="dropdown-item" href="WeeklyDeals.html">Weekly Deals</a>
@@ -65,16 +46,16 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="ShopCart.html"><img src="images/Cart.png" width="18px" height="18px">
-                        Cart</a>
+                    <a class="nav-link" href="ShopCart.html"><img src="images/Cart.png" width="18px" height="18px"> Cart
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Signup.html"><img src="images/User.png" width="18px" height="18px"> Sign
-                        Up</a>
+                    <a class="nav-link" href="Signup.html"><img src="images/User.png" width="18px" height="18px"> Sign Up
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="login.html"><img src="images/Login.png" width="18px" height="18px">
-                        Login</a>
+                    <a class="nav-link" href="login.html"><img src="images/Login.png" width="18px" height="18px"> Login
+                    </a>
                 </li>
         </div>
     </nav>
@@ -97,100 +78,124 @@
             </thead>
             <tbody>
                 <tr>
-                    <td style="width:5%"><img src="images/2%Milk.jpg" height=50px width=50px></img></td>
+                    <td style="width:5%"><img src="images/2Milk.jpg" height=50px width=50px></img>
+                    </td>
                     <td>Quebon</td>
                     <td>Milk 2% - 2L</td>
                     <td>$3.90 </td>
                     <td>10</td>
-                    <td> <a href="UserEdit.html"></a><button>Edit</button></a> <button>Delete</button> </td>
+                    <td>
+                        <a href="UserEdit.html"></a><button>Edit</button></a> <button onclick="this.parentElement.parentElement.remove()">Delete</button> </td>
                 </tr>
                 <tr>
-                    <td style="width:5%"><img src="images/Eggs.jpg" height=50px width=50px></img></td>
+                    <td style="width:5%"><img src="images/Eggs.jpg" height=50px width=50px></img>
+                    </td>
                     <td>Selection</td>
                     <td>Extra Large White Eggs</td>
                     <td>$4.19</td>
                     <td>10</td>
-                    <td> <a href="UserEdit.html"></a><button>Edit</button></a> <button>Delete</button> </td>
+                    <td>
+                        <a href="UserEdit.html"></a><button>Edit</button></a> <button onclick="this.parentElement.parentElement.remove()">Delete</button> </td>
                 </tr>
                 <tr>
-                    <td style="width:5%"><img src="images/CreamCheese.jpg" height=50px width=50px></img></td>
+                    <td style="width:5%"><img src="images/CreamCheese.jpg" height=50px width=50px></img>
+                    </td>
                     <td>Philadelphia</td>
                     <td>Original Cream Cheese</td>
                     <td>$5.49</td>
                     <td>10</td>
-                    <td> <a href="UserEdit.html"></a><button>Edit</button></a> <button>Delete</button> </td>
+                    <td>
+                        <a href="UserEdit.html"></a><button>Edit</button></a> <button onclick="this.parentElement.parentElement.remove()">Delete</button> </td>
                 </tr>
                 <tr>
-                    <td style="width:5%"><img src="images/Yogurt.jpg" height=50px width=50px></img></td>
+                    <td style="width:5%"><img src="images/Yogurt.jpg" height=50px width=50px></img>
+                    </td>
                     <td>Activia</td>
                     <td>Vanilla Yogurt</td>
                     <td>$5.29 </td>
                     <td>10</td>
-                    <td> <a href="UserEdit.html"></a><button>Edit</button></a> <button>Delete</button> </td>
+                    <td>
+                        <a href="UserEdit.html"></a><button>Edit</button></a> <button onclick="this.parentElement.parentElement.remove()">Delete</button> </td>
                 </tr>
                 <tr>
-                    <td style="width:5%"><img src="images/Rasp.jpg" height=50px width=50px></img></td>
+                    <td style="width:5%"><img src="images/Rasp.jpg" height=50px width=50px></img>
+                    </td>
                     <td>Raspberries</td>
                     <td>170g</td>
                     <td>$4.99 </td>
                     <td>10</td>
-                    <td> <a href="UserEdit.html"></a><button>Edit</button></a> <button>Delete</button> </td>
+                    <td>
+                        <a href="UserEdit.html"></a><button>Edit</button></a> <button onclick="this.parentElement.parentElement.remove()">Delete</button> </td>
                 </tr>
                 <tr>
-                    <td style="width:5%"><img src="images/Letuce.jpg" height=50px width=50px></img></td>
+                    <td style="width:5%"><img src="images/Letuce.jpg" height=50px width=50px></img>
+                    </td>
                     <td>Iceberg Letuce</td>
                     <td>Letuce Sold Individually</td>
                     <td>$2.69 </td>
                     <td>10</td>
-                    <td> <a href="UserEdit.html"></a><button>Edit</button></a> <button>Delete</button> </td>
+                    <td>
+                        <a href="UserEdit.html"></a><button>Edit</button></a> <button onclick="this.parentElement.parentElement.remove()">Delete</button> </td>
                 </tr>
                 <tr>
-                    <td style="width:5%"><img src="images/Avocado.jpg" height=50px width=50px></img></td>
+                    <td style="width:5%"><img src="images/Avocado.jpg" height=50px width=50px></img>
+                    </td>
                     <td>Avocado</td>
                     <td>Sold Individually</td>
                     <td>$1.99 </td>
                     <td>10</td>
-                    <td> <a href="UserEdit.html"></a><button>Edit</button></a> <button>Delete</button> </td>
+                    <td>
+                        <a href="UserEdit.html"></a><button>Edit</button></a> <button onclick="this.parentElement.parentElement.remove()">Delete</button> </td>
                 </tr>
                 <tr>
-                    <td style="width:5%"><img src="images/BabyCarrot.jpg" height=50px width=50px></img></td>
+                    <td style="width:5%"><img src="images/BabyCarrot.jpg" height=50px width=50px></img>
+                    </td>
                     <td>Bolthouse Farms</td>
                     <td>Baby - Cut Carrots - 340g</td>
                     <td>$1.99 </td>
                     <td>10</td>
-                    <td> <a href="UserEdit.html"></a><button>Edit</button></a> <button>Delete</button> </td>
+                    <td>
+                        <a href="UserEdit.html"></a><button>Edit</button></a> <button onclick="this.parentElement.parentElement.remove()">Delete</button> </td>
                 </tr>
-                
+
             </tbody>
         </table>
     </div>
 
-    <div class = "wrapper">
-        <a href="UserList.html"><button style="margin:auto;display:block">Add New</button></a>
+    <div class="wrapper">
+        <a href="Edit_a_product.html"><button style="margin:auto;display:block">Add New</button></a>
     </div>
 
     <br><br>
 
     <div class="container text-white bg-dark " style="text-align: center">
-        <div class="row border border-light" >
+        <div class="row border border-light">
             <div style="margin: auto;">
                 Backstore Utilities
             </div>
         </div>
         <div class="row">
-            <div class="col border border-right border-light" style="margin: auto;" >
+            <div class="col border border-right border-light" style="margin: auto;">
                 <a href="ProductList.html" style="color:white;"> Product List </a>
-              </div>
-              <div class="col border border-light" style="margin: auto;">
+            </div>
+            <div class="col border border-light" style="margin: auto;">
                 <a href="UserList.html" style="color:white;"> User List </a>
-              </div>
-              <div class="col border border-light" style="margin: auto;">
+            </div>
+            <div class="col border border-light" style="margin: auto;">
                 <a href="OrderList.html" style="color:white;"> Order List </a>
-              </div>
+            </div>
         </div>
     </div>
 
     <br><br>
+
+    <footer class="footer bg-light text-center">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            <p>
+                © 2021 Copyright: <a class="text-dark" href="Index.html">Freshies.html</a><br/> Have questions about your order? Please <a class="text-dark" href="ContactUs.html">Contact Us</a><br/>
+            </p>
+        </div>
+    </footer>
 
 </body>
 </htlm>
