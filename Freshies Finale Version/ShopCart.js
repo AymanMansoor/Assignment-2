@@ -1,3 +1,56 @@
+
+/*------Part 3------*/
+
+function addToCart()
+{
+    alert("Item Added to Cart.");
+    addme();
+}
+
+var sum = 4;
+function addme() 
+{
+    var mainTable = document.getElementById('myTable');
+    var row = mainTable.insertRow(sum);
+    var cell1 = row.insertCell(0);
+    cell1.innerHTML = sum;
+    sum = sum+1
+
+    var cell2 = row.insertCell(1);
+    cell2.innerHTML = "";
+
+    var cell3 = row.insertCell(2);
+    var img = document.createElement("img");
+    img.src="images/Rasp.jpg";
+    img.style.width="150px";
+    img.style.height="150px";
+    cell3.appendChild(img);
+
+    var cell4 = row.insertCell(3);
+    cell4.innerHTML = "Raspberries - 170g";
+
+    var cell5 = row.insertCell(4);
+    var remove = document.createElement("button")
+    remove.className="btn rmv";
+    remove.textContent="Remove";
+    cell5.appendChild(remove);
+
+
+    var cell6 = row.insertCell(5);
+    var qty = document.createElement("input");
+    qty.type="number";
+    qty.value="1";
+    cell6.appendChild(qty);
+
+    var cell7 = row.insertCell(6);
+    cell7.innerHTML = "$4.99 ea.";
+
+    var cell8 = row.insertCell(7);
+    cell8.innerHTML = "$4.99";
+
+}
+
+
 /*------Part 4------*/
 function subQty1(){
     var qtyItm1 = document.getElementById("qty1").textContent;
@@ -437,54 +490,3 @@ function remove(target)
     toDel.parentNode.removeChild(toDel);
 }
 
-
-/*------Part 3------*/
-
-function addToCart()
-{
-    document.getElementById("addRasp").onclick = addme();
-    location.href= Anita/Documents/Freshies/ShopCart.html;
-}
-
-var sum = 4;
-function addme() 
-{
-    var mainTable = document.getElementById('myTable');
-    var row = mainTable.insertRow(sum);
-    var cell1 = row.insertCell(0);
-    cell1.innerHTML = sum;
-    sum = sum+1
-
-    var cell2 = row.insertCell(1);
-    cell2.innerHTML = "";
-
-    var cell3 = row.insertCell(2);
-    var img = document.createElement("img");
-    img.src="images/Rasp.jpg";
-    img.style.width="150px";
-    img.style.height="150px";
-    cell3.appendChild(img);
-
-    var cell4 = row.insertCell(3);
-    cell4.innerHTML = "Raspberries - 170g";
-
-    var cell5 = row.insertCell(4);
-    var remove = document.createElement("button")
-    remove.className="btn rmv";
-    remove.textContent="Remove";
-    cell5.appendChild(remove);
-
-
-    var cell6 = row.insertCell(5);
-    var qty = document.createElement("input");
-    qty.type="number";
-    qty.value="1";
-    cell6.appendChild(qty);
-
-    var cell7 = row.insertCell(6);
-    cell7.innerHTML = "$4.99 ea.";
-
-    var cell8 = row.insertCell(7);
-    cell8.innerHTML = "$4.99";
-
-}
