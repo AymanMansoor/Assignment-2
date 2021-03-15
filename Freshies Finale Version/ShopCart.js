@@ -36,9 +36,30 @@ function addme()
 
 
     var cell6 = row.insertCell(5);
-    var qty = document.createElement("input");
-    qty.type="number";
-    qty.value="1";
+    var qty = document.createElement("div");
+    qty.className="qtyProd1";
+    
+    var btnUp = document.createElement("button");
+    btnUp.type="button";
+    btnUp.className="btn btn-qtySub";
+    btnUp.id="subQty";
+    btnUp.onClick="subQty2()";
+    btnUp.textContent="-";
+    qty.appendChild(btnUp);
+    
+    var num = document.createElement("div");
+    num.id="qty2";
+    num.textContent="1";
+    qty.appendChild(num);
+
+    var btnDw = document.createElement("button");
+    btnDw.type="button";
+    btnDw.className="btn btn-qtyAdd";
+    btnDw.id="addQty";
+    btnDw.onClick="addQty2()";
+    btnDw.textContent="+";
+    qty.appendChild(btnDw);
+
     cell6.appendChild(qty);
 
     var cell7 = row.insertCell(6);
