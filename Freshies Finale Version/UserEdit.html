@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="style-p2p3.css">
     <link rel="stylesheet" href="style-p1p4.css">
     <link rel="stylesheet" href="p9p10.css">
+    <script type="text/javascript" src="UserEdit.js"></script>
 </head>
 
 <body>
@@ -71,15 +72,15 @@
             </div>
             <div class="col-md-9">
                 <div class="row mt-2">
-                    <div class="col-md-6"><label class="labels">First Name</label><input type="text" class="form-control" placeholder="first name" value="Michael"></div>
-                    <div class="col-md-6"><label class="labels">Last Name</label><input type="text" class="form-control" placeholder="last name" value="Larsen"></div>
+                    <div class="col-md-6"><label class="labels">First Name</label><input type="text" class="form-control" placeholder="first name" value="Michael" id="firstname"></div>
+                    <div class="col-md-6"><label class="labels">Last Name</label><input type="text" class="form-control" placeholder="last name" value="Larsen" id="lastname"></div>
                 </div>
                 <div class="row mt-2">
                     <div class="col-md-6"><label class="labels">Adress</label><input type="text" class="form-control" placeholder="address" value="7034, Rue Saint-Denis"></div>
-                    <div class="col-md-3"><label class="labels">Postal code</label><input type="text" maxlength="6" class="form-control" placeholder="postal code" value="J5L3V7"></div>
+                    <div class="col-md-3"><label class="labels">Postal code</label><input type="text" maxlength="6" class="form-control" placeholder="postal code" value="J5L 3V7" id="postalcode"></div>
                 </div>
                 <div class="row mt-2">
-                    <div class="col-md-6"><label class="labels">Email</label><input type="text" class="form-control" placeholder="email" value="MichaelKLarsen@hotmail.com"></div>
+                    <div class="col-md-6"><label class="labels">Email</label><input type="text" class="form-control" placeholder="email" value="MichaelKLarsen@hotmail.com" id="email_add"></div>
                     <div class="col-md-3"><label class="labels">Phone number</label><input type="text" maxlength="10" class="form-control" placeholder="phone number" value="4507832468"></div>
                 </div>
 
@@ -89,36 +90,36 @@
     </div>
 
     <div>
-        <button style="margin:auto;display:block" onclick="location.reload()">Save</button>
+        <button style="margin:auto;display:block" onclick="validate()">Save</button>
     </div>
 
     <br> </br>
 
-    <div class="container text-white bg-dark " style="text-align: center">
-        <div class="row border border-light">
-            <div style="margin: auto;">
+    <div class="container text-white bg-dark " style="text-align: center ">
+        <div class="row border border-light ">
+            <div style="margin: auto; ">
                 Backstore Utilities
             </div>
         </div>
-        <div class="row">
-            <div class="col border border-right border-light" style="margin: auto;">
-                <a href="ProductList.html" style="color:white;">Product List</a>
+        <div class="row ">
+            <div class="col border border-right border-light " style="margin: auto; ">
+                <a href="ProductList.html " style="color:white; ">Product List</a>
             </div>
-            <div class="col border border-light" style="margin: auto;">
-                <a href="UserList.html" style="color:white;"> User List </a>
+            <div class="col border border-light " style="margin: auto; ">
+                <a href="UserList.html " style="color:white; "> User List </a>
             </div>
-            <div class="col border border-light" style="margin: auto;">
-                <a href="OrderList.html" style="color:white;">Order List </a>
+            <div class="col border border-light " style="margin: auto; ">
+                <a href="OrderList.html " style="color:white; ">Order List </a>
             </div>
         </div>
     </div>
 
     <br> </br>
 
-    <footer class="footer bg-light text-center" id="footer">
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    <footer class="footer bg-light text-center " id="footer ">
+        <div class="text-center p-3 " style="background-color: rgba(0, 0, 0, 0.2) ">
             <p>
-                © 2021 Copyright: <a class="text-dark" href="Index.html">Freshies.html</a><br/> Have questions about your order? Please <a class="text-dark" href="ContactUs.html">Contact Us</a><br/>
+                © 2021 Copyright: <a class="text-dark " href="Index.html ">Freshies.html</a><br/> Have questions about your order? Please <a class="text-dark " href="ContactUs.html ">Contact Us</a><br/>
             </p>
         </div>
     </footer>
