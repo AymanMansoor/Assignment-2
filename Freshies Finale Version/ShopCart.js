@@ -19,11 +19,13 @@ function addme()
     cell2.innerHTML = "";
 
     var cell3 = row.insertCell(2);
+    var imgDiv = document.createElement("div");
     var img = document.createElement("img");
     img.src="images/Rasp.jpg";
     img.style.width="150px";
     img.style.height="150px";
-    cell3.appendChild(img);
+    imgDiv.appendChild(img);
+    cell3.appendChild(imgDiv);
 
     var cell4 = row.insertCell(3);
     cell4.innerHTML = "Raspberries - 170g";
@@ -32,6 +34,7 @@ function addme()
     var remove = document.createElement("button")
     remove.className="btn rmv";
     remove.textContent="Remove";
+    remove.onClick="remove(this)";
     cell5.appendChild(remove);
 
 
@@ -61,12 +64,16 @@ function addme()
     qty.appendChild(btnDw);
 
     cell6.appendChild(qty);
+    
 
     var cell7 = row.insertCell(6);
-    cell7.innerHTML = "$4.99 ea.";
+    cell7.id="cost";
+    cell7.style="color: red";
+    cell7.innerHTML = "$3.99 ea.";
 
     var cell8 = row.insertCell(7);
-    cell8.innerHTML = "$4.99";
+    cell8.id="fnCost2";
+    cell8.innerHTML = "$3.99";
 
 }
 
