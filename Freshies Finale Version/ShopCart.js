@@ -4,7 +4,6 @@
 function addToCart()
 {
     alert("Item Added to Cart.");
-    addme();
 }
 
 var sum = 4;
