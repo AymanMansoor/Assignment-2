@@ -158,7 +158,45 @@ td a{
     margin-left: 10px;
 }
 
+/*------Raspberries------*/
 
+.product{
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+.prod-info{
+    background-color: white;
+}
+.prod{
+    background-color: white;
+    font-family: Patua One;
+}
+.prod.saleCost{
+    padding-top: 20px;
+}
+.prod.cost{
+    padding-top: 20px;
+}
+.qty{
+    margin-top: 30px;
+    background-color: white;
+}
+.btn.Add{
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    font-family: serif;
+}
+.btn.Add:hover{
+    color: rgb(49, 49, 49)
+}
+.panel-group{
+    background-color: white;
+}
+.btn.btn-link.prodDesc{
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
 
 
 

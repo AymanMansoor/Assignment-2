@@ -27,20 +27,18 @@
                 <a class="nav-link" href="Index.html">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="ProductList.html">All Products</a>
+                <a class="nav-link" href="#">All Products</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="Aisles.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Aisles</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="Aisles.html">All Aisles</a>
-                    <a class="dropdown-item" href="WeeklyDeals.html">Weekly Deals</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="DairyEggs.html">Dairy & Eggs</a>
                     <a class="dropdown-item" href="FruitVegie.html">Fruits & Vegetables</a>
-                    <a class="dropdown-item" href="Snacks.html">Snacks</a>
-                    <a class="dropdown-item" href="Meat.html">Meat & Poultry</a>
-                    <a class="dropdown-item" href="Bread.html">Bread & Bakery</a>
-                    <a class="dropdown-item" href="Beverages.html">Beverages</a>
+                    <a class="dropdown-item" href="#">Meat & Poultry</a>
+                    <a class="dropdown-item" href="#">Bread & Bakery</a>
+                    <a class="dropdown-item" href="#">Beverages</a>
                 </div>
             </li>
             <li class="nav-item">
@@ -56,47 +54,45 @@
     </nav>
 
 
-    <div class="container container1">
+    <div class="container product">
         <div class="row">
             <div class="col-md-5">
                 <img src="images/Letuce.jpg">
             </div>
             <div class="col-md-7">
-                <h4 class="prod-brand"></h4>
                 <h2 class="prod">Iceberg Lettuce</h2>
-                <h4 class="prod">Sold Individually</h4>
-                <h2 class="prod-price"><em>$2.69 ea.</em></h2>
-                <br>
-            <div>
-                <label>Quantity:</label>
-                <input type="number" value="1">
-            </div>
-            <div>
-                <button type="button" class="btn btn-default cart"><i class="fa fa-shopping-cart"> ADD</i></button>
-            </div>
-                
-                <div id="accordion">
-                    <div class="card">
-                        <div class="card-header" id="headingOne">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Product Description
-                                </button>
-                            </h5>
-                        </div>
-
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                            <div class="card-body">
-                                Ingredients: Lettuce.
-                                <br><br>
-                                Product Number: 0123456792
+                <h4 class="prod size">Sold Individually</h4>
+                <h2 class="prod cost"><em>$2.69 ea.</em></h2>
+                <div>
+                    <label class="qty">Quantity: </label>
+                    <input type="number" class="quatity" value="1"/>
+                </div>
+                <div>
+                    <button type="button" class="btn Add"><i class="fa fa-shopping-cart"> ADD</i></button>
+                </div>
+                <div>
+                    <div class="accordion" id="accordion">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button type="button" class="btn btn-link prodDesc" data-toggle="collapse" data-target="#collapseOne"> Product Description</button>									
+                                </h2>
+                            </div>
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>
+                                        Iceberg lettuce is the crunchy, pale vegetable great to add to your fast-food burger or to make a diner salad. It has a neutral taste and refreshing 
+                                        crunch.
+                                        <br><br>
+                                        Ingredients: Iceberg Lettuce.<br><br>
+                                        Product Number: 0123456792
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                
-            </div>
+            </div>           
         </div>
     </div>
 
