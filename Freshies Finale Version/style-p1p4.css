@@ -1,69 +1,61 @@
 /*------Index------*/
-
 .main {
     background: url('images/FreshFruits.jpg') no-repeat center center fixed;
     -webkit-background-size: 100%;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: auto;
-}
+    }
 
-.navbar-brand {
+.navbar-brand{
     text-decoration: none;
     font-family: 'Pacifico', cursive;
     font-size: 50pt;
     margin-left: 20px;
     margin-right: 40px;
-    -webkit-text-fill-color: rgb(255, 115, 0);
-}
+    -webkit-text-fill-color:rgb(255, 115, 0);
 
-.navbar-nav {
+}
+.navbar-nav{
     text-align: center;
     font-family: Patua One;
     font-size: 14pt;
 }
-
-.nav-item {
+.nav-item{
     padding-left: 25px;
     padding-right: 25px;
     text-align: center;
 }
-
-.dropdown-item {
+.dropdown-item{
     text-align: center;
 }
 
-.banner {
+.banner{
     margin: auto;
     margin-top: 50px;
     background-color: white;
     opacity: 0.9;
     padding: 50px;
 }
-
-.banner-title {
+.banner-title{
     font-family: Pacifico;
     font-size: 80pt;
     color: rgb(255, 115, 0);
 }
-
-h2 {
+h2{
     font-family: Oleo Script;
     font-size: 30pt;
-    color: black;
+    color:black;
 }
-
-.banner-para {
+.banner-para{
     font-family: Oleo Script;
     font-size: 18pt;
     color: rgb(117, 117, 117);
 }
-
-.btn-primary {
+.btn-primary{
     text-decoration: none;
     display: inline-block;
-    background: red;
+    background:red;
     color: white;
     padding: 8px 30px;
     margin-left: 42%;
@@ -72,12 +64,10 @@ h2 {
     font-size: 14pt;
     font-family: Patua One;
 }
-
-.btn-primary:hover {
+.btn-primary:hover{
     background: rgb(110, 0, 0);
 }
-
-.banner-2 {
+.banner-2{
     margin: auto;
     margin-top: 50px;
     margin-bottom: 300px;
@@ -85,18 +75,17 @@ h2 {
     opacity: 0.9;
     padding: 50px;
 }
-
-.banner-para2 {
+.banner-para2{
     text-align: center;
     font-family: Patua One;
     font-size: 24pt;
     color: black;
-}
 
-.btn-sec {
+}
+.btn-sec{
     text-decoration: none;
     display: inline-block;
-    background: red;
+    background:red;
     color: white;
     padding: 8px 30px;
     margin-left: 41%;
@@ -105,36 +94,29 @@ h2 {
     font-size: 14pt;
     font-family: Patua One;
 }
-
-.footer {
-    background-color: white;
+.footer{
+    background-color:white;
 }
 
-
 /*------ShopCart------*/
-
-.cart-responsive.shopcart {
+.cart-responsive.shopcart{
     margin-bottom: 120px;
     margin-left: 80px;
     margin-right: 80px;
 }
-
-.cart-page {
+.cart-page{
     margin: 80px auto;
 }
-
-table {
+table{
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 100px;
 }
-
-.cart-info {
+.cart-info{
     display: flex;
     flex-wrap: wrap;
 }
-
-th {
+th{
     text-align: left;
     padding: 5px;
     color: white;
@@ -142,99 +124,107 @@ th {
     opacity: 0.9;
     font-weight: normal;
 }
-
-td {
-    background: white;
+td{
+    background:white;
     opacity: 0.9;
     padding: 10px 5px;
 }
-
-td input {
+td input{
     width: 40px;
     height: 30px;
     padding: 0px;
 }
-
-.btn.rmv {
-    color: red;
+.btn.rmv{
+    color:red;
     font-size: 15px;
     padding: 5px;
+}
+.qtyProd1{
+    margin-left: 15px;
+}
+.btn.btn-qtySub{
+    background-color: black;
+    color: white;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-top: 8px;
+}
+.btn.btn-qtyAdd{
+    background-color: black;
+    color: white;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
 }
 
 
 /*------ContactUs------*/
-
-.contact {
+.contact{
     background-color: rgba(247, 242, 235, 0.884);
-    margin-top: 70px;
+    margin-top: 70px; 
     margin-bottom: 70px;
     padding-bottom: 50px;
-}
 
-.contactHead {
+}
+.contactHead{
     padding-top: 50px;
     font-family: Eczar;
 }
-
-.formItem {
+.formItem{
     background-color: transparent;
-}
 
-.form-control {
+}
+.form-control{
     text-align: left;
 }
-
-#warn {
+#warn{
     color: red;
     margin-left: 10px;
 }
 
-
 /*------Products------*/
 
-.product {
+.product{
     margin-top: 100px;
     margin-bottom: 200px;
 }
-
-.prod {
+.prod{
     background-color: white;
     font-family: Patua One;
 }
-
-.prod.brand {
+.prod.brand{
     padding-top: 10px;
 }
-
-.prod.saleCost {
+.prod.saleCost{
     padding-top: 20px;
 }
-
-.prod.cost {
+.prod.cost{
     padding-top: 20px;
 }
-
-.qty {
+.qty{
     margin-top: 30px;
     background-color: white;
 }
-
-.btn.Add {
+.btn.Add{
     margin-top: 20px;
     background-color: black;
     color: white;
     font-family: serif;
 }
-
-.btn.Add:hover {
+.btn.Add:hover{
     color: rgb(49, 49, 49)
 }
-
-.panel-group {
+.panel-group{
     background-color: white;
 }
-
-.btn.btn-link.prodDesc {
+.btn.btn-link.prodDesc{
     font-family: sans-serif;
     margin-bottom: 20px;
 }
+
+
+
+
