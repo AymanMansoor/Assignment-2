@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="style-p2p3.css">
     <link rel="stylesheet" href="style-p1p4.css">
     <link rel="stylesheet" href="p9p10.css">
+    <script type="text/javascript" src="productp7p8.js"></script>
 </head>
 
 <body>
@@ -77,256 +78,330 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr id="row1">
                     <td style="width:5%"><img src="images/2Milk.jpg" height=50px width=50px></img>
                     </td>
-                    <td>Quebon</td>
-                    <td>Milk 2% - 2L</td>
-                    <td>$3.90 ea.</td>
-                    <td>10</td>
+                    <td id="brand_row1">Quebon</td>
+                    <td id="details_row1">Milk 2% - 2L</td>
+                    <td id="price_row1">$3.90 ea.</td>
+                    <td id="quantity_row1">10</td>
                     <td>
-                        <a href="AddProduct.html"><button style="font-size: 16px;">Edit</button></a> <button>Delete</button> </td>
+                        <input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+                        <input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
+                        <input type="button" value="Delete" class="delete" onclick="delete_row('1')">
+                    </td>
                 </tr>
-                <tr>
+                <tr id="row2">
                     <td style="width:5%"><img src="images/Eggs.jpg" height=50px width=50px></img>
                     </td>
-                    <td>Selection</td>
-                    <td>Extra Large White Eggs</td>
-                    <td>$4.19 ea.</td>
-                    <td>10</td>
+                    <td id="brand_row2">Selection</td>
+                    <td id="details_row2">Extra Large White Eggs</td>
+                    <td id="price_row2">$4.19 ea.</td>
+                    <td id="quantity_row2">10</td>
                     <td>
-                        <a href="AddProduct.html"><button style="font-size: 16px;">Edit</button></a> <button>Delete</button> </td>
+                        <input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')">
+                        <input type="button" id="save_button2" value="Save" class="save" onclick="save_row('2')">
+                        <input type="button" value="Delete" class="delete" onclick="delete_row('2')">
+                    </td>
                 </tr>
-                <tr>
+                <tr id="row3">
                     <td style="width:5%"><img src="images/CreamCheese.jpg" height=50px width=50px></img>
                     </td>
-                    <td>Philadelphia</td>
-                    <td>Original Cream Cheese</td>
-                    <td>$5.49 ea.</td>
-                    <td>10</td>
+                    <td id="brand_row3">Philadelphia</td>
+                    <td id="details_row3">Original Cream Cheese</td>
+                    <td id="price_row3">$5.49 ea.</td>
+                    <td id="quantity_row3">10</td>
                     <td>
-                        <a href="AddProduct.html"><button style="font-size: 16px;">Edit</button></a> <button>Delete</button> </td>
+                        <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
+                        <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')">
+                        <input type="button" value="Delete" class="delete" onclick="delete_row('3')">
+                    </td>
                 </tr>
-                <tr>
+                <tr id="row4">
                     <td style="width:5%"><img src="images/Yogurt.jpg" height=50px width=50px></img>
                     </td>
-                    <td>Activia</td>
-                    <td>Vanilla Yogurt</td>
-                    <td>$5.29 ea.</td>
-                    <td>10</td>
+                    <td id="brand_row4">Activia</td>
+                    <td id="details_row4">Vanilla Yogurt</td>
+                    <td id="price_row4">$5.29 ea.</td>
+                    <td id="quantity_row4">10</td>
                     <td>
-                        <a href="AddProduct.html"><button style="font-size: 16px;">Edit</button></a> <button>Delete</button> </td>
+                        <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('4')">
+                        <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('4')">
+                        <input type="button" value="Delete" class="delete" onclick="delete_row('4')">
+                    </td>
                 </tr>
-                <tr>
+                <tr id="row5">
                     <td style="width:5%"><img src="images/Rasp.jpg" height=50px width=50px></img>
                     </td>
-                    <td>Raspberries</td>
-                    <td>170g</td>
-                    <td>$4.99 ea.</td>
-                    <td>10</td>
+                    <td id="brand_row5">Raspberries</td>
+                    <td id="details_row5">170g</td>
+                    <td id="price_row5">$4.99 ea.</td>
+                    <td id="quantity_row5">10</td>
                     <td>
-                        <a href="AddProduct.html"><button style="font-size: 16px;">Edit</button></a> <button>Delete</button> </td>
+                        <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('5')">
+                        <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('5')">
+                        <input type="button" value="Delete" class="delete" onclick="delete_row('5')">
+                    </td>
                 </tr>
-                <tr>
+                <tr id="row6">
                     <td style="width:5%"><img src="images/Letuce.jpg" height=50px width=50px></img>
                     </td>
-                    <td>Iceberg Letuce</td>
-                    <td>Letuce Sold Individually</td>
-                    <td>$2.69 ea.</td>
-                    <td>10</td>
+                    <td id="brand_row6">Iceberg Letuce</td>
+                    <td id="details_row6">Letuce Sold Individually</td>
+                    <td id="price_row6">$2.69 ea.</td>
+                    <td id="quantity_row6">10</td>
                     <td>
-                        <a href="AddProduct.html"><button style="font-size: 16px;">Edit</button></a> <button>Delete</button> </td>
+                        <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('6')">
+                        <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('6')">
+                        <input type="button" value="Delete" class="delete" onclick="delete_row('6')">
+                    </td>
                 </tr>
-                <tr>
+                <tr id="row7">
                     <td style="width:5%"><img src="images/Avocado.jpg" height=50px width=50px></img>
                     </td>
-                    <td>Avocado</td>
-                    <td>Sold Individually</td>
-                    <td>$1.99 ea.</td>
-                    <td>10</td>
+                    <td id="brand_row7">Avocado</td>
+                    <td id="details_row7">Sold Individually</td>
+                    <td id="price_row7">$1.99 ea.</td>
+                    <td id="quantity_row7">10</td>
                     <td>
-                        <a href="AddProduct.html"><button style="font-size: 16px;">Edit</button></a> <button>Delete</button> </td>
+                        <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('7')">
+                        <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('7')">
+                        <input type="button" value="Delete" class="delete" onclick="delete_row('7')">
+                    </td>
                 </tr>
-                <tr>
+                <tr id="row8">
                     <td style="width:5%"><img src="images/BabyCarrot.jpg" height=50px width=50px></img>
                     </td>
-                    <td>Bolthouse Farms</td>
-                    <td>Baby - Cut Carrots - 340g</td>
-                    <td>$1.99 ea.</td>
-                    <td>10</td>
+                    <td id="brand_row8">Bolthouse Farms</td>
+                    <td id="details_row8">Baby - Cut Carrots - 340g</td>
+                    <td id="price_row8">$1.99 ea.</td>
+                    <td id="quantity_row8">10</td>
                     <td>
-                        <a href="AddProduct.html"><button style="font-size: 16px;">Edit</button></a> <button>Delete</button> </td>
+                        <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('8')">
+                        <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('8')">
+                        <input type="button" value="Delete" class="delete" onclick="delete_row('8')">
+                    </td>
                 </tr>
 
-                <tr>
+                <tr id="row9">
                     <td style="width:5%"><img src="images/GoldFish.jpg" height=50px width=50px></img>
                     </td>
-                    <td>Pepperidge Farm</td>
-                    <td>Goldfish - 200g</td>
-                    <td>$3.39 ea.</td>
-                    <td>10</td>
+                    <td id="brand_row9">Pepperidge Farm</td>
+                    <td id="details_row9">Goldfish - 200g</td>
+                    <td id="price_row9">$3.39 ea.</td>
+                    <td id="quantity_row9">10</td>
                     <td>
-                        <a href="AddProduct.html"><button style="font-size: 16px;">Edit</button></a> <button>Delete</button> </td>
+                        <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('9')">
+                        <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('9')">
+                        <input type="button" value="Delete" class="delete" onclick="delete_row('9')">
+                    </td>
                 </tr>
-                <tr>
+                <tr id="row10">
                     <td style="width:5%"><img src="images/Pringles.jpg" height=50px width=50px></img>
                     </td>
-                    <td>Kellogg's</td>
-                    <td>Origigal Pringles - 148g</td>
-                    <td>$2.79 ea.</td>
-                    <td>10</td>
+                    <td id="brand_row10">Kellogg's</td>
+                    <td id="details_row10">Origigal Pringles - 148g</td>
+                    <td id="price_row10">$2.79 ea.</td>
+                    <td id="quantity_row10">10</td>
                     <td>
-                        <a href="AddProduct.html"><button style="font-size: 16px;">Edit</button></a> <button>Delete</button> </td>
+                        <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('10')">
+                        <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('10')">
+                        <input type="button" value="Delete" class="delete" onclick="delete_row('10')">
+                    </td>
                 </tr>
-                <tr>
+                <tr id="row11">
                     <td style="width:5%"><img src="images/Doritos.jpg" height=50px width=50px></img>
                     </td>
-                    <td>Doritos</td>
-                    <td>Nacho Cheese Tortilla Chips - 255g</td>
-                    <td>$4.29 ea.</td>
-                    <td>10</td>
+                    <td id="brand_row11">Doritos</td>
+                    <td id="details_row11">Nacho Cheese Tortilla Chips - 255g</td>
+                    <td id="price_row11">$4.29 ea.</td>
+                    <td id="quantity_row11">10</td>
                     <td>
-                        <a href="AddProduct.html"><button style="font-size: 16px;">Edit</button></a> <button>Delete</button> </td>
+                        <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('11')">
+                        <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('11')">
+                        <input type="button" value="Delete" class="delete" onclick="delete_row('11')">
+                    </td>
                 </tr>
-                <tr>
+                <tr id="row12">
                     <td style="width:5%"><img src="images/JosLouis.jpg" height=50px width=50px></img>
                     </td>
-                    <td>Vachon</td>
-                    <td>Jos Louis - 324g</td>
-                    <td><em><h9 style="color: red;">2/$6.00 or $3.39 ea.<br><s style="color: black;">$3.89 ea.</s></h9></em></td>
-                    <td>10</td>
+                    <td id="brand_row12">Vachon</td>
+                    <td id="details_row12">Jos Louis - 324g</td>
+                    <td id="price_row12"><em><h9 style="color: red;">2/$6.00 or $3.39 ea.<br><s style="color: black;">$3.89 ea.</s></h9></em></td>
+                    <td id="quantity_row12">10</td>
                     <td>
-                        <a href="AddProduct.html"><button style="font-size: 16px;">Edit</button></a> <button>Delete</button> </td>
+                        <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('12')">
+                        <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('12')">
+                        <input type="button" value="Delete" class="delete" onclick="delete_row('12')">
+                    </td>
                 </tr>
-                <tr>
+                <tr id="row13">
                     <td style="width:5%"><img src="images/Chicken.jpg" height=50px width=50px></img>
                     </td>
-                    <td>Boneless Trimmed - Chicken Breasts</td>
-                    <td>5 breasts/pack</td>
-                    <td>$7.99 /lb.</td>
-                    <td>10</td>
+                    <td id="brand_row13">Boneless Trimmed - Chicken Breasts</td>
+                    <td id="details_row13">5 breasts/pack</td>
+                    <td id="price_row13">$7.99 /lb.</td>
+                    <td id="quantity_row13">10</td>
                     <td>
-                        <a href="AddProduct.html"><button style="font-size: 16px;">Edit</button></a> <button>Delete</button> </td>
+                        <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('13')">
+                        <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('13')">
+                        <input type="button" value="Delete" class="delete" onclick="delete_row('13')">
+                    </td>
                 </tr>
-                <tr>
+                <tr id="row14">
                     <td style="width:5%"><img src="images/Tbone.jpg" height=50px width=50px></img>
                     </td>
-                    <td>Red Grill - T-Bone Steak</td>
-                    <td>2 steaks/pack</td>
-                    <td>$15.99 /lb.</td>
-                    <td>10</td>
+                    <td id="brand_row14">Red Grill - T-Bone Steak</td>
+                    <td id="details_row14">2 steaks/pack</td>
+                    <td id="price_row14">$15.99 /lb.</td>
+                    <td id="quantity_row14">10</td>
                     <td>
-                        <a href="AddProduct.html"><button style="font-size: 16px;">Edit</button></a> <button>Delete</button> </td>
+                        <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('14')">
+                        <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('14')">
+                        <input type="button" value="Delete" class="delete" onclick="delete_row('14')">
+                    </td>
                 </tr>
-                <tr>
+                <tr id="row15">
                     <td style="width:5%"><img src="images/Bacon.jpg" height=50px width=50px></img>
                     </td>
-                    <td>Selection</td>
-                    <td>Regular Bacon - 375g</td>
-                    <td><em><h9 style="color: red;">4.99 ea.<br><s style="color: black;">$6.99 ea.</s></h9></em></td>
-                    <td>10</td>
+                    <td id="brand_row15">Selection</td>
+                    <td id="details_row15">Regular Bacon - 375g</td>
+                    <td id="price_row15"><em><h9 style="color: red;">4.99 ea.<br><s style="color: black;">$6.99 ea.</s></h9></em></td>
+                    <td id="quantity_row15">10</td>
                     <td>
-                        <a href="AddProduct.html"><button style="font-size: 16px;">Edit</button></a> <button>Delete</button> </td>
+                        <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('15')">
+                        <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('15')">
+                        <input type="button" value="Delete" class="delete" onclick="delete_row('15')">
+                    </td>
                 </tr>
-                <tr>
+                <tr id="row16">
                     <td style="width:5%"><img src="images/HotDog.jpg" height=50px width=50px></img>
                     </td>
-                    <td>Maple Leaf</td>
-                    <td>Original Wieners - 375g</td>
-                    <td>$6.29 ea.</td>
-                    <td>10</td>
+                    <td id="brand_row16">Maple Leaf</td>
+                    <td id="details_row16">Original Wieners - 375g</td>
+                    <td id="price_row16">$6.29 ea.</td>
+                    <td id="quantity_row16">10</td>
                     <td>
-                        <a href="AddProduct.html"><button style="font-size: 16px;">Edit</button></a> <button>Delete</button> </td>
+                        <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('16')">
+                        <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('16')">
+                        <input type="button" value="Delete" class="delete" onclick="delete_row('16')">
+                    </td>
                 </tr>
-                <tr>
+                <tr id="row17">
                     <td style="width:5%"><img src="images/Bread.jpg" height=50px width=50px></img>
                     </td>
-                    <td>Villaggio</td>
-                    <td>Original White Bread - 675g</td>
-                    <td>$3.59 ea.</td>
-                    <td>10</td>
+                    <td id="brand_row17">Villaggio</td>
+                    <td id="details_row17">Original White Bread - 675g</td>
+                    <td id="price_row17">$3.59 ea.</td>
+                    <td id="quantity_row17">10</td>
                     <td>
-                        <a href="AddProduct.html"><button style="font-size: 16px;">Edit</button></a> <button>Delete</button> </td>
+                        <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('17')">
+                        <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('17')">
+                        <input type="button" value="Delete" class="delete" onclick="delete_row('17')">
+                    </td>
                 </tr>
-                <tr>
+                <tr id="row18">
                     <td style="width:5%"><img src="images/Bagel.jpg" height=50px width=50px></img>
                     </td>
-                    <td>POM</td>
-                    <td>12 Grain Bagels - 510g</td>
-                    <td>$3.99 ea.</td>
-                    <td>10</td>
+                    <td id="brand_row18">POM</td>
+                    <td id="details_row18">12 Grain Bagels - 510g</td>
+                    <td id="price_row18">$3.99 ea.</td>
+                    <td id="quantity_row18">10</td>
                     <td>
-                        <a href="AddProduct.html"><button style="font-size: 16px;">Edit</button></a> <button>Delete</button> </td>
+                        <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('18')">
+                        <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('18')">
+                        <input type="button" value="Delete" class="delete" onclick="delete_row('18')">
+                    </td>
                 </tr>
-                <tr>
+                <tr id="row19">
                     <td style="width:5%"><img src="images/Tortillas.jpg" height=50px width=50px></img>
                     </td>
-                    <td>POM</td>
-                    <td>Original 7" Tortillas - 10 tortillas/pack</td>
-                    <td>$3.79 ea.</td>
-                    <td>10</td>
+                    <td id="brand_row19">POM</td>
+                    <td id="details_row19">Original 7" Tortillas - 10 tortillas/pack</td>
+                    <td id="price_row19">$3.79 ea.</td>
+                    <td id="quantity_row19">10</td>
                     <td>
-                        <a href="AddProduct.html"><button style="font-size: 16px;">Edit</button></a> <button>Delete</button> </td>
+                        <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('19')">
+                        <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('19')">
+                        <input type="button" value="Delete" class="delete" onclick="delete_row('19')">
+                    </td>
                 </tr>
-                <tr>
+                <tr id="row20">
                     <td style="width:5%"><img src="images/Pie.jpg" height=50px width=50px></img>
                     </td>
-                    <td>Bolthouse Farms</td>
-                    <td>Apple Pie - 620g</td>
-                    <td>$6.99 ea.</td>
-                    <td>10</td>
+                    <td id="brand_row20">Bolthouse Farms</td>
+                    <td id="details_row20">Apple Pie - 620g</td>
+                    <td id="price_row20">$6.99 ea.</td>
+                    <td id="quantity_row20">10</td>
                     <td>
-                        <a href="AddProduct.html"><button style="font-size: 16px;">Edit</button></a> <button>Delete</button> </td>
+                        <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('20')">
+                        <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('20')">
+                        <input type="button" value="Delete" class="delete" onclick="delete_row('20')">
+                    </td>
                 </tr>
-                <tr>
+                <tr id="row21">
                     <td style="width:5%"><img src="images/Water.jpg" height=50px width=50px></img>
                     </td>
-                    <td>Eska</td>
-                    <td>Natural Spring Water - 4L</td>
-                    <td>$2.49 ea.</td>
-                    <td>10</td>
+                    <td id="brand_row21">Eska</td>
+                    <td id="details_row21">Natural Spring Water - 4L</td>
+                    <td id="price_row21">$2.49 ea.</td>
+                    <td id="quantity_row21">10</td>
                     <td>
-                        <a href="AddProduct.html"><button style="font-size: 16px;">Edit</button></a> <button>Delete</button> </td>
+                        <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('21')">
+                        <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('21')">
+                        <input type="button" value="Delete" class="delete" onclick="delete_row('21')">
+                    </td>
                 </tr>
-                <tr>
+                <tr id="row22">
                     <td style="width:5%"><img src="images/OrangeJuice.jpg" height=50px width=50px></img>
                     </td>
-                    <td>OASIS</td>
-                    <td>Orange Juice Without Pulp - 1.65L</td>
-                    <td>$4.49 ea.</td>
-                    <td>10</td>
+                    <td id="brand_row22">OASIS</td>
+                    <td id="details_row22">Orange Juice Without Pulp - 1.65L</td>
+                    <td id="price_row22">$4.49 ea.</td>
+                    <td id="quantity_row22">10</td>
                     <td>
-                        <a href="AddProduct.html"><button style="font-size: 16px;">Edit</button></a> <button>Delete</button> </td>
+                        <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('22')">
+                        <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('22')">
+                        <input type="button" value="Delete" class="delete" onclick="delete_row('22')">
+                    </td>
                 </tr>
-                <tr>
+                <tr id="row23">
                     <td style="width:5%"><img src="images/Coke.jpg" height=50px width=50px></img>
                     </td>
-                    <td>Coca-Cola</td>
-                    <td>Soft Drink - 12x355ml</td>
-                    <td><em><h9 style="color: red;">$6.49 ea.<br><s style="color: black;">$7.29 ea.</s></h9></em></td>
-                    <td>10</td>
+                    <td id="brand_row23">Coca-Cola</td>
+                    <td id="details_row23">Soft Drink - 12x355ml</td>
+                    <td id="price_row23"><em><h9 style="color: red;">$6.49 ea.<br><s style="color: black;">$7.29 ea.</s></h9></em></td>
+                    <td id="quantity_row23">10</td>
                     <td>
-                        <a href="AddProduct.html"><button style="font-size: 16px;">Edit</button></a> <button>Delete</button> </td>
+                        <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('23')">
+                        <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('23')">
+                        <input type="button" value="Delete" class="delete" onclick="delete_row('23')">
+                    </td>
                 </tr>
-                <tr>
+                <tr id="row24">
                     <td style="width:5%"><img src="images/Coffee.jpg" height=50px width=50px></img>
                     </td>
-                    <td>Maxwell House</td>
-                    <td>Original Roast Instant Coffee- 150g</td>
-                    <td>$5.99 ea.</td>
-                    <td>10</td>
+                    <td id="brand_row24">Maxwell House</td>
+                    <td id="details_row24">Original Roast Instant Coffee- 150g</td>
+                    <td id="price_row24">$5.99 ea.</td>
+                    <td id="quantity_row24">10</td>
                     <td>
-                        <a href="AddProduct.html"><button style="font-size: 16px;">Edit</button></a> <button>Delete</button> </td>
+                        <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('24')">
+                        <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('24')">
+                        <input type="button" value="Delete" class="delete" onclick="delete_row('24')">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="new_brand"></td>
+                    <td><input type="text" id="new_details"></td>
+                    <td><input type="text" id="new_price"></td>
+                    <td><inout type="text" id="new_quantity"></td>
+                    <td><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
                 </tr>
 
             </tbody>
         </table>
     </div>
-
-    <div class="wrapper">
-        <a href="AddProduct.html"><button style="margin:auto;display:block">Add New</button></a>
-    </div>
-
     <br><br>
 
     <div class="container text-white bg-dark " style="text-align: center">
