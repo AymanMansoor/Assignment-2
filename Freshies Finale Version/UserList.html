@@ -12,9 +12,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Freshies</title>
-    <link rel="stylesheet" href="style-p2p3.css">
     <link rel="stylesheet" href="style-p1p4.css">
     <link rel="stylesheet" href="p9p10.css">
+    <script type="text/javascript" src="UserList.js"></script>
 </head>
 
 <body>
@@ -80,74 +80,106 @@
                 <tr>
                     <td style="width:5%"><img src="images/pfp1.jpeg" height=50px width=50px></img>
                     </td>
-                    <td>slous1948</td>
-                    <td>Michael Larsen</td>
-                    <td>MichaelKLarsen@hotmail.com </td>
+                    <td id="username_row1">slous1948</td>
+                    <td id="name_row1">Michael Larsen</td>
+                    <td id="email_row1">MichaelKLarsen@hotmail.com </td>
                     <td>2 Days Ago</td>
-                    <td> <a href="UserEdit.html"><button style="font-size: 16px;">Edit</button></a> <button onclick="this.parentElement.parentElement.remove()">Delete</button> </td>
+                    <td>
+                        <input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+                        <input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
+                        <input type="button" style="width:60px" value="Delete" class="delete" onclick="this.parentElement.parentElement.remove()">
+                    </td>
                 </tr>
                 <tr>
                     <td style="width:5%"><img src="images/nopfp.jpg" height=50px width=50px></img>
                     </td>
-                    <td>capproper</td>
-                    <td>Kristi Moran</td>
-                    <td>KristiMoran@yahoo.com </td>
+                    <td id="username_row2">capproper</td>
+                    <td id="name_row2">Kristi Moran</td>
+                    <td id="email_row2">KristiMoran@yahoo.com </td>
                     <td>3 Weeks Ago</td>
-                    <td> <a href="UserEdit.html"><button style="font-size: 16px;">Edit</button></a> <button onclick="this.parentElement.parentElement.remove()">Delete</button> </td>
+                    <td>
+                        <input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')">
+                        <input type="button" id="save_button2" value="Save" class="save" onclick="save_row('2')">
+                        <input type="button" style="width:60px" value="Delete" class="delete" onclick="this.parentElement.parentElement.remove()">
+                    </td>
                 </tr>
                 <tr>
                     <td style="width:5%"><img src="images/pfp3.jpeg" height=50px width=50px></img>
                     </td>
-                    <td>Coullefelow</td>
-                    <td>Kelly Slack</td>
-                    <td>klyslc@yahoo.com </td>
+                    <td id="username_row3">Coullefelow</td>
+                    <td id="name_row3">Kelly Slack</td>
+                    <td id="email_row3">klyslc@yahoo.com </td>
                     <td>1 Day Ago</td>
-                    <td> <a href="UserEdit.html"><button style="font-size: 16px;">Edit</button></a> <button onclick="this.parentElement.parentElement.remove()">Delete</button> </td>
+                    <td>
+                        <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
+                        <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')">
+                        <input type="button" style="width:60px" value="Delete" class="delete" onclick="this.parentElement.parentElement.remove()">
+                    </td>
                 </tr>
                 <tr>
                     <td style="width:5%"><img src="images/nopfp.jpg" height=50px width=50px></img>
                     </td>
-                    <td>andoing</td>
-                    <td>Lillie Johnson</td>
-                    <td>LJohnson@gmail.com </td>
+                    <td id="username_row4">andoing</td>
+                    <td id="name_row4">Lillie Johnson</td>
+                    <td id="email_row4">LJohnson@gmail.com </td>
                     <td>5 Days Ago</td>
-                    <td> <a href="UserEdit.html"><button style="font-size: 16px;">Edit</button></a> <button onclick="this.parentElement.parentElement.remove()">Delete</button> </td>
+                    <td>
+                        <input type="button" id="edit_button4" value="Edit" class="edit" onclick="edit_row('4')">
+                        <input type="button" id="save_button4" value="Save" class="save" onclick="save_row('4')">
+                        <input type="button" style="width:60px" value="Delete" class="delete" onclick="this.parentElement.parentElement.remove()">
+                    </td>
                 </tr>
                 <tr>
                     <td style="width:5%"><img src="images/nopfp.jpg" height=50px width=50px></img>
                     </td>
-                    <td>bagall</td>
-                    <td>Francine J. Bird</td>
-                    <td>FrancineJBird@hotmail.com </td>
+                    <td id="username_row5">bagall</td>
+                    <td id="name_row5">Francine J. Bird</td>
+                    <td id="email_row5">FrancineJBird@hotmail.com </td>
                     <td>3 Days Ago</td>
-                    <td> <a href="UserEdit.html"><button style="font-size: 16px;">Edit</button></a> <button onclick="this.parentElement.parentElement.remove()">Delete</button> </td>
+                    <td>
+                        <input type="button" id="edit_button5" value="Edit" class="edit" onclick="edit_row('5')">
+                        <input type="button" id="save_button5" value="Save" class="save" onclick="save_row('5')">
+                        <input type="button" style="width:60px" value="Delete" class="delete" onclick="this.parentElement.parentElement.remove()">
+                    </td>
                 </tr>
                 <tr>
                     <td style="width:5%"><img src="images/pfp2.jpeg" height=50px width=50px></img>
                     </td>
-                    <td>Coutered</td>
-                    <td>Jerome Nichols</td>
-                    <td>jeromeN@msn.ca </td>
+                    <td id="username_row6">Coutered</td>
+                    <td id="name_row6">Jerome Nichols</td>
+                    <td id="email_row6">jeromeN@msn.ca </td>
                     <td>5 Weeks Ago</td>
-                    <td> <a href="UserEdit.html"><button style="font-size: 16px;">Edit</button></a> <button onclick="this.parentElement.parentElement.remove()">Delete</button> </td>
+                    <td>
+                        <input type="button" id="edit_button6" value="Edit" class="edit" onclick="edit_row('6')">
+                        <input type="button" id="save_button6" value="Save" class="save" onclick="save_row('6')">
+                        <input type="button" style="width:60px" value="Delete" class="delete" onclick="this.parentElement.parentElement.remove()">
+                    </td>
                 </tr>
                 <tr>
                     <td style="width:5%"><img src="images/nopfp.jpg" height=50px width=50px></img>
                     </td>
-                    <td>caroo1994</td>
-                    <td>Christopher Lemaire</td>
-                    <td>CCL@yahoo.ca </td>
+                    <td id="username_row7">caroo1994</td>
+                    <td id="name_row7">Christopher Lemaire</td>
+                    <td id="email_row7">CCL@yahoo.ca </td>
                     <td>1 Week Ago</td>
-                    <td> <a href="UserEdit.html"><button style="font-size: 16px;">Edit</button></a> <button onclick="this.parentElement.parentElement.remove()">Delete</button> </td>
+                    <td>
+                        <input type="button" id="edit_button7" value="Edit" class="edit" onclick="edit_row('7')">
+                        <input type="button" id="save_button7" value="Save" class="save" onclick="save_row('7')">
+                        <input type="button" style="width:60px" value="Delete" class="delete" onclick="this.parentElement.parentElement.remove()">
+                    </td>
                 </tr>
                 <tr>
                     <td style="width:5%"><img src="images/nopfp.jpg" height=50px width=50px></img>
                     </td>
-                    <td>Sily1989</td>
-                    <td>Jean Baxter</td>
-                    <td>jeanCB@hotmail.com </td>
+                    <td id="username_row8">Sily1989</td>
+                    <td id="name_row8">Jean Baxter</td>
+                    <td id="email_row8">jeanCB@hotmail.com </td>
                     <td>1 Week Ago</td>
-                    <td> <a href="UserEdit.html"><button style="font-size: 16px;">Edit</button></a> <button onclick="this.parentElement.parentElement.remove()">Delete</button> </td>
+                    <td>
+                        <input type="button" id="edit_button8" value="Edit" class="edit" onclick="edit_row('8')">
+                        <input type="button" id="save_button8" value="Save" class="save" onclick="save_row('8')">
+                        <input type="button" style="width:60px" value="Delete" class="delete" onclick="this.parentElement.parentElement.remove()">
+                    </td>
                 </tr>
             </tbody>
         </table>
