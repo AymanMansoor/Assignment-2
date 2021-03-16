@@ -29,14 +29,16 @@ function save_row(no) {
 }
 
 function add_row() {
-    var new_brand = document.getElementById("new_brand").value;
-    var new_details = document.getElementById("new_details").value;
-    var new_price = document.getElementById("new_price").value;
-    var new_quantity = document.getElementById("new_quantity").value;
 
-    var table = document.getElementById("data_table");
+    var new_username = document.getElementById("newusername").value;
+    var new_name = document.getElementById("newname").value;
+    var new_quantity = document.getElementById("newemail").value;
+
+    var table = document.getElementById("usertable");
     var table_len = (table.rows.length) - 1;
-    var row = table.insertRow(table_len).outerHTML = "<tr id='row" + table_len + "'><td id='brand_row" + table_len + "'>" + new_brand + "</td><td id='details_row" + table_len + "'>" + new_details + "</td><td id='price_row" + table_len + "'>" + new_price + "</td><td id='quantity_row" + table_len + "'>" + new_quantity + "</td><td><input type='button' id='edit_button" + table_len + "' value='Edit' class='edit' onclick='edit_row(" + table_len + ")'> <input type='button' id='save_button" + table_len + "' value='Save' class='save' onclick='save_row(" + table_len + ")'> <input type='button' value='Delete' class='delete' onclick='delete_row(" + table_len + ")'></td></tr>";
+
+    var node = createElement("tr");
+    node.innerHTML = "<td style='width:5%' <img src='images/nopfp.jpg' height=50px width=50px></img></td>> ";
 
     document.getElementById("new_brand").value = "";
     document.getElementById("new_details").value = "";

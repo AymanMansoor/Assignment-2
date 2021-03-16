@@ -76,7 +76,7 @@
                     <th>Actions</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="usertable">
                 <tr>
                     <td style="width:5%"><img src="images/pfp1.jpeg" height=50px width=50px></img>
                     </td>
@@ -87,7 +87,7 @@
                     <td>
                         <input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
                         <input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
-                        <input type="button" style="width:60px" value="Delete" class="delete" onclick="this.parentElement.parentElement.remove()">
+                        <input type="button" id="delete" value="Delete" class="delete" onclick="this.parentElement.parentElement.remove()">
                     </td>
                 </tr>
                 <tr>
@@ -100,7 +100,7 @@
                     <td>
                         <input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')">
                         <input type="button" id="save_button2" value="Save" class="save" onclick="save_row('2')">
-                        <input type="button" style="width:60px" value="Delete" class="delete" onclick="this.parentElement.parentElement.remove()">
+                        <input type="button" id="delete" value="Delete" class="delete" onclick="this.parentElement.parentElement.remove()">
                     </td>
                 </tr>
                 <tr>
@@ -113,7 +113,7 @@
                     <td>
                         <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
                         <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')">
-                        <input type="button" style="width:60px" value="Delete" class="delete" onclick="this.parentElement.parentElement.remove()">
+                        <input type="button" id="delete" value="Delete" class="delete" onclick="this.parentElement.parentElement.remove()">
                     </td>
                 </tr>
                 <tr>
@@ -126,7 +126,7 @@
                     <td>
                         <input type="button" id="edit_button4" value="Edit" class="edit" onclick="edit_row('4')">
                         <input type="button" id="save_button4" value="Save" class="save" onclick="save_row('4')">
-                        <input type="button" style="width:60px" value="Delete" class="delete" onclick="this.parentElement.parentElement.remove()">
+                        <input type="button" id="delete" value="Delete" class="delete" onclick="this.parentElement.parentElement.remove()">
                     </td>
                 </tr>
                 <tr>
@@ -139,7 +139,7 @@
                     <td>
                         <input type="button" id="edit_button5" value="Edit" class="edit" onclick="edit_row('5')">
                         <input type="button" id="save_button5" value="Save" class="save" onclick="save_row('5')">
-                        <input type="button" style="width:60px" value="Delete" class="delete" onclick="this.parentElement.parentElement.remove()">
+                        <input type="button" id="delete" value="Delete" class="delete" onclick="this.parentElement.parentElement.remove()">
                     </td>
                 </tr>
                 <tr>
@@ -152,7 +152,7 @@
                     <td>
                         <input type="button" id="edit_button6" value="Edit" class="edit" onclick="edit_row('6')">
                         <input type="button" id="save_button6" value="Save" class="save" onclick="save_row('6')">
-                        <input type="button" style="width:60px" value="Delete" class="delete" onclick="this.parentElement.parentElement.remove()">
+                        <input type="button" id="delete" value="Delete" class="delete" onclick="this.parentElement.parentElement.remove()">
                     </td>
                 </tr>
                 <tr>
@@ -165,7 +165,7 @@
                     <td>
                         <input type="button" id="edit_button7" value="Edit" class="edit" onclick="edit_row('7')">
                         <input type="button" id="save_button7" value="Save" class="save" onclick="save_row('7')">
-                        <input type="button" style="width:60px" value="Delete" class="delete" onclick="this.parentElement.parentElement.remove()">
+                        <input type="button" id="delete" value="Delete" class="delete" onclick="this.parentElement.parentElement.remove()">
                     </td>
                 </tr>
                 <tr>
@@ -178,15 +178,37 @@
                     <td>
                         <input type="button" id="edit_button8" value="Edit" class="edit" onclick="edit_row('8')">
                         <input type="button" id="save_button8" value="Save" class="save" onclick="save_row('8')">
-                        <input type="button" style="width:60px" value="Delete" class="delete" onclick="this.parentElement.parentElement.remove()">
+                        <input type="button" id="delete" value="Delete" class="delete" onclick="this.parentElement.parentElement.remove()">
                     </td>
+                </tr>
+                <tr>
+                    <td style="width:5%"><img src="images/nopfp.jpg" height=50px width=50px></img>
+                    </td>
+                    <td id="username_row8">Username</td>
+                    <td id="name_row8">Name</td>
+                    <td id="email_row8">Email </td>
+                    <td>1 Week Ago</td>
+                    <td>
+                        <input type="button" id="edit_button8" value="Edit" class="edit" onclick="edit_row('8')">
+                        <input type="button" id="save_button8" value="Save" class="save" onclick="save_row('8')">
+                        <input type="button" id="delete" value="Delete" class="delete" onclick="this.parentElement.parentElement.remove()">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:5%"><img src="images/nopfp.jpg" height=50px width=50px></img>
+                    </td>
+                    <td> <input type='text' style='width:150px' id='newusername' value='New Username'></td>
+                    <td> <input type='text' style='width:200px' id='newname' value='New Name'></td>
+                    <td> <input type='text' style='width:200px' id='newemail' value='New Email'></td>
+                    <td></td>
+                    <td></td>
                 </tr>
             </tbody>
         </table>
     </div>
 
     <div class="wrapper">
-        <a href="UserEdit.html"><button style="margin:auto;display:block">Add New</button></a>
+        <button style="margin:auto;display:block">Add New</button>
     </div>
 
     <br> </br>

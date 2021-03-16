@@ -18,3 +18,7 @@ h4 {
     bottom: 0;
     width: 100%;
 }
+
+#delete {
+    width: 60px;
+}
