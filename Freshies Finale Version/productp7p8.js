@@ -48,4 +48,5 @@ function add_row()
  document.getElementById("new_product").value="";
  document.getElementById("new_price").value="";
  document.getElementById("new_quantity").value="";
+ 
 }
