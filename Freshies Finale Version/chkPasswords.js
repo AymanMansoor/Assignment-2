@@ -24,9 +24,6 @@ function chkPasswords()
             
             window.location="index.html";
             return false;
-        }else{
-            alert("Passwords don't match, please enter the same password");
         }
-        return true;
     
 }
