@@ -80,8 +80,9 @@ function add_row() {
 
         var newcom = "row('" + (table_len + 1);
         var str8 = str7.replace(/row\('\d/g, newcom);
+        var str9 = str8.replace("2 Days Ago", "Never");
 
-        s.innerHTML = str8;
+        s.innerHTML = str9;
 
         table.insertBefore(s, table.children[table_len]);
 
