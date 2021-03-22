@@ -1,6 +1,6 @@
 function validate()
 {
-    document.getElementById('myForm')
+    
     
     var firstname = document.getElementById("firstname");
     var lastname = document.getElementById("lastname");
