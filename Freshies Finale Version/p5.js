@@ -1,6 +1,6 @@
 function validate()
 {
-    document.getElementById('myForm')
+   
 	var emailt = document.getElementById("email");
 	var password = document.getElementById("password");
     var reg = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
