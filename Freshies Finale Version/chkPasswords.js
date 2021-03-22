@@ -1,6 +1,6 @@
 function chkPasswords()
 {
-    document.getElementById('myForm')
+    
 	var pass1 = document.getElementById("initial");
 	var pass2 = document.getElementById("second");
 
