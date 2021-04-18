@@ -1,0 +1,8 @@
+12345AB,slous1948,3,Visa,$13.32,03-14-2021,Processing,Quebon-2%Milk-2L,1,3.90ea.,3.90,Raspberries-170g,1,3.99ea.,3.99,Iceberg-Letuce-Sold-Individually,1,2.69ea.,2.69
+12344AB,capproper,2,Visa,$12.09,03-12-2021,Processing,Avocado-Sold-Individually,3,$1.99ea.,5.97,POM-12GrainBagels-510g,1,$3.99ea.,3.99
+12343AB,Coullefelow,3,MasterCard,$112.02,03-12-2021,Processing,Quebon-2%Milk-2L,1,3.90ea.,3.90,Raspberries-170g,1,3.99ea.,3.99,Iceberg-Letuce-Sold-Individually,1,2.69ea.,2.69
+12342AB,andoing,3,Visa,$36.59,03-08-2021,Delivering,Quebon-2%Milk-2L,1,3.90ea.,3.90,Raspberries-170g,1,3.99ea.,3.99,Iceberg-Letuce-Sold-Individually,1,2.69ea.,2.69
+12341AB,bagall,3,Paypal,$19.96,03-05-2021,Completed,Quebon-2%Milk-2L,1,3.90ea.,3.90,Raspberries-170g,1,3.99ea.,3.99,Iceberg-Letuce-Sold-Individually,1,2.69ea.,2.69
+12340AB,Coutered,3,Paypal,$145.68,02-28-2021,Completed,Quebon-2%Milk-2L,1,3.90ea.,3.90,Raspberries-170g,1,3.99ea.,3.99,Iceberg-Letuce-Sold-Individually,1,2.69ea.,2.69
+12339AB,caroo1994,3,MasterCard,$78.76,02-27-2021,Completed,Quebon-2%Milk-2L,1,3.90ea.,3.90,Raspberries-170g,1,3.99ea.,3.99,Iceberg-Letuce-Sold-Individually,1,2.69ea.,2.69
+12338AB,Sily1989,3,Visa,$152.66,02-27-2021,Completed,Quebon-2%Milk-2L,1,3.90ea.,3.90,Raspberries-170g,1,3.99ea.,3.99,Iceberg-Letuce-Sold-Individually,1,2.69ea.,2.69
