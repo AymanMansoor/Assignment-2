@@ -39,7 +39,7 @@ session_start();
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="Aisles.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Aisles</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="Aisles.html">All Aisles</a>
+                    <a class="dropdown-item" href="Aisles.php">All Aisles</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="DairyEggs.php">Dairy & Eggs</a>
                     <a class="dropdown-item" href="FruitVegie.php">Fruits & Vegetables</a>
