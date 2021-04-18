@@ -9,8 +9,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-<script type="text/javascript" src="login.php"></script>
 
+<script src="p5.js"></script>
 <head>
     <meta charset="UTF-8">
     <title>Freshies - Login</title>
@@ -56,44 +56,42 @@
 
 
 
-    <br>
-    <div class="container col-md-12">
-        <div class="text ">
-            <div>
-                <h2>Log in </h2>
-                <form action="log.php" method="post" onsubmit="return validate()">
-                    <div class="form-group col-md-6">
-                        <label for="email">Email:</label>
-                        <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="pwd">Password:</label>
-                        <input type="password" name="pass" class="form-control" id="password" placeholder="Enter password">
-                    </div>
-                    <div class="checkbox">
-                        <label><input class="check" type="checkbox" name="remember"> Remember me</label>
-                    </div>
-                    <input type="submit"  name="submit" role="button" value="submit" class="btn btn-info" >
-                    <a href="forgetpassword.html" class="btn btn-info" role="button">Forget password</a>
-                    <p>Don't have an account ? <a href="Signup.html" style="color:red">Sign up</a>.</p>
-                    <script type="text/javascript" src="p5.js"></script>
-                </form>
-            </div>
-        </div>
-    </div>
-
-
-
-    <footer class="footer bg-light text-center" id="footer">
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-            <p>
-                © 2021 Copyright: <a class="text-dark" href="Index.html">Freshies.html</a><br/> Have questions about your order? Please <a class="text-dark" href="ContactUs.html">Contact Us</a><br/>
-            </p>
-        </div>
-    </footer>
-
-
-
-</body>
-
-</html>
+<?php  session_start(); ?>  
+<?php
+ 
+if(isset($_POST['submit']))   
+{
+     $email = $_POST['email'];
+     $pass = $_POST['pass'];
+ 
+    if(isset($_POST["email"]) && isset($_POST["pass"])){
+    $file = fopen('data.txt', 'r');
+    $good=false;
+    while(!feof($file)){
+        $line = fgets($file);
+        $array = explode(";",$line);
+	if(trim($array[0]) == $_POST['email'] && trim($array[1]) == $_POST['pass']){
+            $good=true;
+            break;
+        }
+    }
+ 
+    if($good){
+	$_SESSION['email'] = $email;
+    echo "<script>alert('you have logged in sucessfully ');</script>";
+    echo'<script> window.location="ProductList.html"; </script> ';
+   
+    
+    }else{
+        echo "<script>alert('invalid email or password.');</script>";
+        echo'<script> window.location="login.html"; </script> ';
+        
+    }
+    fclose($file);
+    }
+    else{
+        include 'login.html';
+    }
+ 
+}
+?>
