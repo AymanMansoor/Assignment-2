@@ -8,7 +8,7 @@ include('header.php');
             <div class="col-md-3">
                 <form action="manage_cart.php" method="POST">
                   <div class="product-top">
-                    <a href="Milk.html"><img src="images/Milk.jpg"></a>
+                    <a href="Milk.html"><img src="images/2Milk.jpg"></a>
                     <div class="card-body" style="text-align:center; font-family:Patua One;">
                         <h4 class="card-title" style="font-size:20px;">Quebon - 2% Milk - 2L</h4>
                         <p class="card-text">$3.90 ea.</p>
