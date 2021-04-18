@@ -38,7 +38,7 @@ include('header.php');
             <div class="col-md-3">
                 <form action="manage_cart.php" method="POST">
                   <div class="product-top">
-                    <a href="Avocado.html"><img src="images/CreamCheese.jpg"></a>
+                    <a href="Avocado.html"><img src="images/Avocado.jpg"></a>
                     <div class="card-body" style="text-align:center; font-family:Patua One;">
                         <h4 class="card-title" style="font-size:20px;">Avocado - Sold Individually</h4>
                         <p class="card-text">$1.99 ea.</p>
