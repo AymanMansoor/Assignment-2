@@ -35,11 +35,10 @@ function validate()
     }
   if( firstname.value != "" && lastname.value != "") 
     {
-        alert("Registration successful!"); 
-        window.location="index.html";
-        return false;
+        return true;
     }else{
         alert("Please complete first name or last name");
+	    return false;
     }
     
 
