@@ -26,9 +26,9 @@ function validate()
       return false;
     }
     else{(emailt.value == reg && password.value == pwd)
-        alert("Login successfully!"); 
+       return true;
         
-        window.location="index.html";
+        
       
     }
 	
